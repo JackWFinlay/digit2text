@@ -1,0 +1,4 @@
+src/digit2text/bin
+src/digit2text/obj
+test/digit2text.Tests/bin
+test/digit2text.Tests/obj
