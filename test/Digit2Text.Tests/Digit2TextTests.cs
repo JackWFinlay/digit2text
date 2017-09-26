@@ -16,8 +16,7 @@ namespace Digit2Text.Tests
         [Fact]
         public void ReturnOneGiven1()
         {
-            var result = _digit2Text.Convert(1);
-
+            var result = _digit2Text.Convert(758975);
             Assert.Equal("One", result);
         }
     }
