@@ -42,9 +42,41 @@ namespace Digit2Text.Tests
         [Fact]
         public void ReturnOneHundredGiven100()
         {
-            string result = _digit2Text.Convert(200);
+            string result = _digit2Text.Convert(100);
             Console.WriteLine(result);
             Assert.Equal("One Hundred", result);
+        }
+
+        [Fact]
+        public void ReturnOneHundredOneGiven101()
+        {
+            string result = _digit2Text.Convert(101);
+            Console.WriteLine(result);
+            Assert.Equal("One Hundred One", result);
+        }
+
+        [Fact]
+        public void ReturnOneHundredElevenGiven111()
+        {
+            string result = _digit2Text.Convert(111);
+            Console.WriteLine(result);
+            Assert.Equal("One Hundred Eleven", result);
+        }
+
+        [Fact]
+        public void ReturnOneHundredTwentyOne()
+        {
+            string result = _digit2Text.Convert(121);
+            Console.WriteLine(result);
+            Assert.Equal("One Hundred Twenty-One", result);
+        }
+
+        [Fact]
+        public void ReturnOneThousandOneHundredOneGiven1101()
+        {
+            string result = _digit2Text.Convert(1101);
+            Console.WriteLine(result);
+            Assert.Equal("One Thousand One Hundred One", result);
         }
     }
 }
