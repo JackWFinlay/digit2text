@@ -29,7 +29,7 @@ namespace Digit2Text
             for (int n = 0; n < digits.ToString().Length; n++ )
             {
                 string digitsString = digits.ToString();
-                Int64.TryParse(digitsString[n].ToString(), out long digit);
+                Int64.TryParse(digitsString.Substring(digitsString.Length - n, n), out long digit);
                 long number = (long)Math.Floor(digit/(Math.Pow(10, n)));
                 parts.Add(Enum.GetName(typeof(Numbers), number));
             }
